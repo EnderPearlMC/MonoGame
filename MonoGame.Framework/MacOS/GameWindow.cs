@@ -409,6 +409,9 @@ namespace Microsoft.Xna.Framework
 			get {
 				return clientBounds;
 			}
+            internal set {
+                clientBounds = value;
+            }
 		}
 
 		public bool AllowUserResizing {

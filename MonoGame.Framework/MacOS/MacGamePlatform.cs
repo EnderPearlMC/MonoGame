@@ -387,6 +387,7 @@ namespace Microsoft.Xna.Framework
 
         public override void EndScreenDeviceChange(string screenDeviceName, int clientWidth, int clientHeight)
         {
+            _gameWindow.ClientBounds = new Rectangle (_gameWindow.ClientBounds.X, _gameWindow.ClientBounds.Y, clientWidth, clientHeight);
         }
 
         public override void ResetElapsedTime()
